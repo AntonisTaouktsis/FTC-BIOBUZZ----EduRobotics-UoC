@@ -1,9 +1,10 @@
+
 <div align="center">
 
 # 🤖 EduRobotics – UoC
 ## FIRST Tech Challenge Lab
 
-### <div align="center">
+<div align="center">
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=1400&pause=500&center=true&vCenter=true&width=760&lines=%E2%9A%99%EF%B8%8F+BUILD;%F0%9F%92%BB+CODE;%F0%9F%A7%AA+BREAK;%F0%9F%94%A7+DEBUG;%F0%9F%9A%80+REPEAT" alt="BUILD • CODE • BREAK • DEBUG • REPEAT" />
 
@@ -24,29 +25,25 @@
 
 ---
 
-# 👋 Welcome, Humans!
+# 👋 Welcome!
 
-Welcome to the **EduRobotics - UoC FTC Lab repository**!
+Καλώς ήρθατε στο **EduRobotics – UoC FTC Lab repository**!
 
-This repository exists for educational purposes on behalf of **EduRobotics – University of Crete** and contains material used for our **FIRST Tech Challenge preparation and robotics labs**.
+Το repository δημιουργήθηκε για εκπαιδευτικούς σκοπούς στο πλαίσιο της **EduRobotics – University of Crete** και περιλαμβάνει υλικό για την προετοιμασία μας στο **FIRST Tech Challenge**, καθώς και για τα εργαστήρια ρομποτικής της ομάδας.
 
-Here you will find:
+Εδώ θα βρείτε:
 
-- 📚 Lab material
-- 🧩 Exercises
-- 📝 Exercise submissions
-- ⚙️ Hardware design
-- 💻 Software design
-- 🤖 Robot software
-- 🧪 Experiments
-- 🏆 Challenges
-- 🐛 A statistically significant number of bugs
+-  Υλικό εργαστηρίων
+-  Ασκήσεις
+-  Παραδοτέα ασκήσεων
+-  Hardware design
+-  Software design
+-  Κώδικα του robot
+-  Πειράματα
+-  Challenges
+-  Εναν στατιστικά πολύ μεγάλο αριθμό από bugs
 
-Our objective is **not** simply to build a robot that works.
-
-We want to understand:
-
- **WHY it works.**
+Στόχος μας είναι να κατασκευάσουμε ένα ρομπότ που καταλαβαίνουμε ακριβώς **πως και γιατί** λειτουγρεί. 
 
 ---
 
@@ -56,13 +53,13 @@ We want to understand:
 FTC-Lab/
 │
 ├── 📁 labs/
-│   └── Lab instructions, theory & experiments
+│   └── Οδηγίες εργαστηρίων, θεωρία & πειράματα
 │
 ├── 📁 exercises/
-│   └── Exercises and challenges
+│   └── Ασκήσεις και challenges
 │
 ├── 📁 submissions/
-│   └── Student solutions
+│   └── Λύσεις μαθητών
 │
 ├── 📁 hardware/
 │   ├── drivetrain/
@@ -86,7 +83,7 @@ FTC-Lab/
 
 # 🎯 The Mission
 
-During the labs we want to understand the complete engineering process:
+Στα εργαστήρια θέλουμε να κατανοήσουμε **το  engineering process**:
 
 ```mermaid
 flowchart LR
@@ -103,14 +100,12 @@ flowchart LR
     G --> B
 ```
 
-The goal is to eventually look at the robot and think:
-**"I understand why this thing moves."**
-
----
+Ο στόχος είναι κάποια στιγμή να μπορούμε να κοιτάξουμε το robot και να σκεφτούμε ότι καταλαβαίνουμε
+γιατί κινείται αυτό το πράγμα. 
 
 # 🧠 The Engineering Loop™
 
-Every experiment should roughly follow this process:
+Κάθε πείραμα θα πρέπει, σε γενικές γραμμές, να ακολουθεί αυτή τη διαδικασία:
 
 ```text
 ┌─────────────────┐
@@ -140,7 +135,7 @@ Every experiment should roughly follow this process:
          └───────────↻
 ```
 
-Or, for the programmers:
+Ή, για τους πιο προχωρημένους:
 
 ```java
 while (!robotWorks()) {
@@ -165,44 +160,40 @@ celebrate();
 
 # 📜 The Sacred Rules of the Lab
 
-## 🥇 Rule #1 - Understand before you copy
+##  Rule #1 - Καταλαβαίνουμε πριν αντιγράψουμε
 
-You are absolutely allowed to use:
+Μπορείτε να χρησιμοποιείτε:
 
-- 📖 Documentation (recommended)
-- 🌐 The Internet (under mentors' supervision, recommended)
-- 🤖 AI tools (under mentors' supervision, NOT recommended)
-- 👥 Your teammates (recommended)
-- 🧙 Mentors (recommended)
-- 💻 Example code (recommended)
+-  Documentation *(recommended)*
+-  Το Internet *(με την επίβλεψη των mentors, recommended)*
+-  AI tools *(με την επίβλεψη των mentors, NOT recommended)*
+-  Τους teammates σας *(recommended)*
+-  Τους mentors *(recommended)*
+-  Example code *(recommended)*
 
-But there is one condition:
+Υπάρχει όμως **ένας βασικός όρος**:
 
-### If you submit code, you must be able to explain it.
+### Αν παραδίδετε κώδικα, πρέπει να μπορείτε να εξηγήσετε τι κάνει.
 
-If a mentor asks:
+Αν ένας mentor σας ρωτήσει "Γιατί υπάρχει αυτή η γραμμή κώδικα εδώ?"
 
-> **"Why is this line here?"**
+αυτή είναι μια απολύτως αποδεκτή απάντηση:
 
-this is a perfectly acceptable answer:
+"Μετατρέπει τα ticks του encoder σε περιστροφές του τροχού"
 
-> "It converts the encoder ticks into wheel rotations."
+Καπως λιγότερο αποδεκτή είναι η "Δεν ξέρω"
 
-This is somewhat less acceptable:
+Και αυτή...
 
-> "I don't know."
+> "Το έγραψε το AI"
 
-And this...
-
-> "ChatGPT wrote it 💀"
-
-...means we're going to sit down and understand it together. 
+...σημαίνει ότι θα καθίσουμε μαζί για να καταλάβουμε τι ακριβώς κάνει.
 
 ---
 
-## 🥈 Rule #2 - Random changes ≠ debugging
+## Rule #2 - Random changes ≠ debugging
 
-This:
+Αυτό:
 
 ```text
 change number
@@ -224,9 +215,9 @@ pray
 robot works
 ```
 
-is **not debugging**.
+**δεν είναι debugging**.
 
-Try this instead:
+Δοκιμάστε αυτό:
 
 ```text
 OBSERVATION
@@ -240,126 +231,98 @@ RESULT
 CONCLUSION
 ```
 
-Whenever possible:
-
-### Change ONE thing at a time.
-
-Otherwise, even if the robot starts working...
-
-**you won't know why.** and you will not be albe to fix future problems
+Σε γενικές γραμμές προσπαθούμε να αλλάζουμε αποκλριστικά ένα πράγματα τη φορά. 
+Διαφορετικά, ακόμη κι αν το robot αρχίσει ξαφνικά να λειτουργεί...
+**δεν θα ξέρετε γιατί.**
+Και, ακόμα σημαντικότερα, δεν θα ξέρετε πώς να διορθώσετε ένα αντίστοιχο πρόβλημα στο μέλλον.
 
 ---
 
-## 🥉 Rule #3 - ROBOT MOVING! 🚨
+## Rule #3 - ROBOT MOVING! 🚨
 
-Before running code that moves hardware:
+Πριν εκτελέσετε κώδικα που πρόκειται να κινήσει οποιοδήποτε μέρος του robot:
 
-# 🗣️ SAY IT.
+# 🗣️ Ενημερώστε τους συμμαθητές και τους μέντορες σας
 
-> ## "ROBOT MOVING!"
+> ## "Το ξεκινάω!"
 
-Everyone around the robot should know that something is about to happen.
+Όλοι γύρω από το robot πρέπει να γνωρίζουν ότι κάτι πρόκειται να κινηθεί, να πεταχτεί. 
+ΠΑΝΤΑ στο εργαστήριο όταν ασχολούμαστε με το Hardware φοράμε προστατευτικό εξοπλισμό.
 
-Before pressing **PLAY**:
+Πριν πατήσετε **PLAY**, πρέπει να ισχύουν τα ακόλουθα:
 
 ```text
-[ ] Nobody has their hands inside the robot
-[ ] The robot has enough space
-[ ] Cables are clear
-[ ] Tools are not inside the robot
-[ ] The mechanism can move safely
-[ ] Emergency stop is accessible
-[ ] The code looks vaguely sane
+[ ] Κανείς δεν έχει τα χέρια του μέσα στο robot
+[ ] Το robot έχει αρκετό χώρο για να κινηθεί
+[ ] Τα καλώδια είναι μακριά από κινούμενα μέρη ή καλά προσταυεμένα
+[ ] Δεν υπάρχουν εργαλεία μέσα στο robot
+[ ] Ο μηχανισμός μπορεί να κινηθεί με ασφάλεια
+[ ] Το emergency stop είναι προσβάσιμο
+[ ] Έχουμε ήδη προβλέψει το αποτέλεσμα του κώδικα
 ```
 
-Especially if your code contains:
-
-```java
-motor.setPower(1.0);
-```
-
-👀
 
 ---
 
-## 🔧 Rule #4 - Respect the hardware
+## Rule #4 - Respect the hardware
 
-Hardware is unfortunately **not protected by Ctrl+Z**.
+Το hardware δυστυχώς **δεν προστατεύεται από Ctrl+Z**.
 
-Do not:
+Μην:
 
-- ❌ force mechanisms by hand
-- ❌ pull connectors by their wires
-- ❌ leave screws inside the robot
-- ❌ run stalled motors continuously
-- ❌ change wiring while the robot is powered
-- ❌ put fingers inside moving mechanisms
-- ❌ use the robot as transportation
-- ❌ attempt to discover whether the drivetrain can climb walls
+- ❌ πιέζετε μηχανισμούς με το χέρι
+- ❌ τραβάτε connectors από τα καλώδιά τους
+- ❌ αφήνετε βίδες ή εργαλεία μέσα στο robot
+- ❌ αφήνετε stalled motors (κινητήρες που εμποδίζονται από κάτι) να λειτουργούν συνεχόμενα
+- ❌ αλλάζετε καλωδίωση ενώ το robot είναι ενεργοποιημένο
+- ❌ βάζετε τα δάχτυλά σας μέσα σε κινούμενους μηχανισμούς
+- ❌ χρησιμοποιείτε το robot ως μέσο μεταφοράς
+- ❌ προσπαθείτε να ανακαλύψετε αν το drivetrain μπορεί να σκαρφαλώσει τοίχους
 
-That last one is negotiable.
+Το τελευταίο είναι συζητήσιμο.
 
-**Ask a mentor first.**
- ⚠️ **Safety Notice:** Approval from Sousis or Stefanos does not constitute mentor approval. They would have said yes.
+**Ρωτήστε τους εθελοντές μας**
 
----
-
-## 🧠 Rule #5 — ASK QUESTIONS.
-
-Questions are not interruptions.
-
-Questions are part of engineering.
-
-Good questions include:
-
- "Why does this happen?"
-
-"Why did we design it like this?"
-"What happens if we change this?"
-"What does this variable physically represent?"
-"Why are the motors mirrored?"
-"Why is the robot doing THAT?"
-"I don't understand this."
-
-The last one is especially important.
-
-### You are here to learn.
-
-Nobody expects you to already know everything.
+> ⚠️ **Safety Notice:** Αν ο Στέφανος ή ο Σούσης πουν ναι, αγνοήστε τους. Θα έλεγαν ναι. 
 
 ---
 
-## 🤝 Rule #6 — Help. Don't hijack.
+## Rule #5 - ASK QUESTIONS.
 
-If your teammate is stuck:
+Οι ερωτήσεις είναι μέρος του engineering.
 
-### ❌ Don't do this
+Καλές ερωτήσεις είναι:
 
-> "Give me the keyboard."
+> "Γιατί λειτουργεί αυτό?"
 
-### ✅ Try this
+> "Γιατί σχεδιάσαμε έτσι αυτό?"
 
-> "What do you expect this variable to contain?"
+> "Τι γίνεται αν αλλάξουμε αυτό?"
 
-or
+> "Στον φυσικό κόσμο ή στην διαίσθηση τι ακριβώς είναι αυτή η μεταβλητή"
 
-> "Where do you think the problem starts?"
+> "Γιατί είναι τα motors mirrored?"
 
-or
+> "WΓιατί το ρομπότ μας κάνει... ΑΥΤΟ?"
 
-> "How could we test that?"
+> "ΔΕΝ ΚΑΤΑΛΑΒΑΙΝΩ"
 
-or
+Η τελευταία είναι ιδιαίτερα σημαντική, καθώς είστε εδώ για να μάθετε. 
 
-> "Let's print that value and see."
-
-The goal isn't for **the code** to learn.
-
-The goal is for **the humans** to learn.
+Συνεπώς, κανείς δεν περιμένει να γνωρίζετε ήδη τα πάντα.
 
 ---
 
-# 💾 Rule #7 — COMMIT. YOUR. CODE.
+## Rule #6 - Help. Don't hijack.
+
+Αν ένας συμμαθητής σας έχει κολλήσει, μην του πάρετε το πληκτρολόγιο ή το κατσαβίδι. 
+Προσπαθήστε να του εξηγήσετε. 
+"Τι τιμή περιμένεις να έχει αυτή η μεταβλητή?". Προσπαθείστε να τον κατευθύνετε να καταλάβει. 
+Στο μέλλον σίγουρα θα χρειαστεί να κάνει το ίδιο αυτός για εσάς. 
+
+
+
+# 💾 Rule #7 - COMMIT. YOUR. CODE.
 
 Please.
 
@@ -367,7 +330,7 @@ Please.
 
 # PLEASE.
 
-Git exists for a reason.
+Το Git υπάρχει για κάποιο λόγο.
 
 ```bash
 git add .
@@ -425,7 +388,7 @@ FINAL_REAL_THIS_TIME
 
 # 🌿 Git Workflow
 
-For exercises and larger changes, we use branches.
+Για τις ασκήσεις και τις μεγαλύτερες αλλαγές χρησιμοποιούμε **branches**.
 
 ```mermaid
 gitGraph
@@ -439,7 +402,7 @@ gitGraph
     merge student-feature
 ```
 
-A typical workflow:
+Ένα τυπικό workflow είναι:
 
 ```bash
 # Get the latest version
@@ -457,19 +420,19 @@ git commit -m "Implement motor velocity control"
 git push -u origin your-name/exercise-name
 ```
 
-Then open a **Pull Request**.
+Στη συνέχεια ανοίγετε ένα **Pull Request**.
 
 ---
 
 # 📝 Exercise Submissions
 
-Exercises should be submitted inside:
+Οι ασκήσεις πρέπει να παραδίδονται μέσα στο:
 
 ```text
 submissions/
 ```
 
-Recommended structure:
+Προτεινόμενη δομή:
 
 ```text
 submissions/
@@ -485,101 +448,77 @@ submissions/
     └── ...
 ```
 
-Each submission should contain a small `README.md` answering:
+Κάθε submission θα πρέπει να περιλαμβάνει ένα μικρό `README.md` που απαντά:
 
 ```markdown
-## What did you implement?
+## Τι υλοποίησες;
 
 ...
 
-## What did you expect to happen?
+## Τι περίμενες να συμβεί;
 
 ...
 
-## What actually happened?
+## Τι συνέβη στην πραγματικότητα;
 
 ...
 
-## What problems did you encounter?
+## Τι προβλήματα αντιμετώπισες;
 
 ...
 
-## How did you solve them?
+## Πώς τα έλυσες;
 
 ...
 
-## What did you learn?
+## Τι έμαθες;
 
 ...
 ```
 
-The important part isn't just the final solution.
+Δεν μας ενδιαφέρει μόνο η τελική λύση.
 
-### We want to see the reasoning.
+### Θέλουμε να δούμε και τον τρόπο σκέψης.
 
 ---
 
-# 🐛 The Debugging Protocol
+# The Debugging Protocol
 
-Your robot doesn't work.
+Το robot δεν λειτουργεί. Πριν καλέσετε έναν mentor:
 
-Excellent.
+### Step 1 - Read the error.
+Διαβάστε προσεκτικά τι συμβαίνει λάθος στο ρομποτ σας. 
+Στην αρχή είναι λίγο τρομακτικό μετά είναι απλή συνήθεια. 
 
-Welcome to robotics.
+### Step 2 - Βρείτε που είναι το πρόβλημα
 
-Before summoning a mentor, try:
+Προσπαθήστε να εντοπίσετε πού βρίσκεται το πρόβλημα:
 
-### 🔍 Step 1 — Read the error.
-
-Yes.
-
-The entire error.
-
-We know.
-
-It's horrifying.
-
-Read it anyway.
-
-### 🔍 Step 2 — Find WHERE the problem occurs.
-
-Is it:
-
-- software?
-- hardware?
-- configuration?
-- wiring?
-- communication?
-- mechanical?
+- software;
+- hardware;
+- configuration;
+- wiring;
+- communication;
+- mechanical;
 - physics reminding us who's actually in charge?
 
-### 🔍 Step 3 — Check your assumptions.
+###  Step 3 - Υποθέστε
 
-You think:
+Πιστεύετε ότι η παρακάτω γραμμή κώδικα θα πάει μπροστά το ρομποτ. 
 
 ```java
 leftMotor.setPower(1);
 ```
 
-means:
-
-```text
-robot → forward
-```
-
-But perhaps reality says:
+Αλλά η πραγματικότητα μπορεί να είναι 
 
 ```text
 robot ↻ VIOLENT ROTATION
 ```
 
-Interesting.
+### Step 4 - Δείτε τι ακριβώς συμβαίνει.
 
-Why?
-
-### 🔍 Step 4 — Measure something.
-
-Use:
+Χρησιμοποιήστε:
 
 - telemetry
 - logs
@@ -587,65 +526,33 @@ Use:
 - sensor readings
 - motor velocities
 - timing measurements
-- your eyes™
+- your eyes
 
-### 🔍 Step 5 — Isolate the problem.
+### Step 5 - Απομονώστε το πρόβλημα
 
-Don't debug:
+Μην προσπαθήσετε να κάνετε debug ολόκληρο το πρόγραμμα. 
+Ένα πρόβλημα τη φορά. 
 
-```text
-THE ENTIRE ROBOT
-```
+#  Mentor Summoning Protocol
 
-Debug:
-
-```text
-motor 1
-```
-
-then:
+Πριν βγάλετε το συμπέρασμα ότι κάτι δεν δουλεύει και επικοινωνήσετε 
+με τους μέντορες σας, προσπαθήστε να έχετε απάντηση στα παρακάτω:
 
 ```text
-motor 2
+┌──────────────────────────────────────────────┐
+│ 1. Τι περίμενα να συμβεί;                   │
+│                                              │
+│ 2. Τι συνέβη στην πραγματικότητα;           │
+│                                              │
+│ 3. Πού πιστεύω ότι βρίσκεται το πρόβλημα;   │
+│                                              │
+│ 4. Τι έχω ήδη ελέγξει;                      │
+│                                              │
+│ 5. Τι μου έδειξαν αυτοί οι έλεγχοι;         │
+└──────────────────────────────────────────────┘
 ```
 
-then:
-
-```text
-drivetrain
-```
-
-then:
-
-```text
-robot
-```
-
----
-
-# 🧙 Mentor Summoning Protocol
-
-Before saying:
-
-> "It doesn't work."
-
-try to answer these:
-
-```text
-┌───────────────────────────────────────────┐
-│ 1. What did I expect to happen?          │
-│                                           │
-│ 2. What actually happened?               │
-│                                           │
-│ 3. Where do I think the problem is?       │
-│                                           │
-│ 4. What have I already tested?            │
-│                                           │
-│ 5. What did those tests tell me?          │
-└───────────────────────────────────────────┘
-```
-
-Then you may summon:
+Μετά, ενοχλήστε μας :)
 
 ```text
               🧙
@@ -657,49 +564,47 @@ Then you may summon:
    "show me the error"
 ```
 
-Mentor happiness increases dramatically when you say:
+Το mentor happiness αυξάνεται δραματικά όταν λέτε:
 
-> **"I expected X, but Y happened. I tested A and B, so I think the problem might be C."**
-
-instead of:
-
-> **"broken."**
+**"Περίμενα X, αλλά συνέβη Y. Έλεγξα τα A και B, οπότε πιστεύω ότι το πρόβλημα μπορεί να είναι το C."**
+αντί για:
+**"Δεν δουλεύει"**
 
 ---
 
-# 🏆 Challenge System
+#  Challenge System
 
-Some labs contain optional challenges.
+Ορισμένα labs περιλαμβάνουν προαιρετικά challenges.
 
-Because apparently the normal exercises weren't enough.
+Γιατί έτσι :)
 
-## 🟢 Level 1 — Apprentice
+##  Level 1 — Apprentice
 
-Complete the basic objective.
+Ολοκλήρωσε τον βασικό στόχο.
 
 **Reward:** The robot does something.
 
 ---
 
-## 🔵 Level 2 — Engineer
+##  Level 2 — Engineer
 
-Improve the basic solution.
+Βελτίωσε τη βασική λύση.
 
 **Reward:** The robot does something *well*.
 
 ---
 
-## 🟣 Level 3 — Wizard
+##  Level 3 — Wizard
 
-Create a cleaner, smarter, more general solution.
+Δημιούργησε μια πιο καθαρή, έξυπνη ή γενικευμένη λύση.
 
 **Reward:** Respect.
 
 ---
 
-## 🔴 Level 4 — WHY WOULD YOU DO THIS?
+##  Level 4 — WHY WOULD YOU DO THIS?
 
-The unnecessarily difficult mentor challenge.
+Ένα παραλογα δύσκολο challenge:
 
 **Reward:**
 
@@ -715,46 +620,41 @@ The unnecessarily difficult mentor challenge.
 
 ---
 
-# 🏅 Achievements
+#  Achievements
 
 Unofficial achievements may include:
 
 | Achievement | Requirement |
 |---|---|
-| 🐣 **Hello Robot** | Make a motor move for the first time |
-| 🔥 **Magic Smoke Survivor** | Almost break something but don't |
-| 🐛 **Bug Hunter** | Find a bug nobody else noticed |
-| 🧙 **Debugger** | Fix a problem without mentor intervention |
-| 📖 **RTFM** | Solve something by actually reading the documentation |
-| 🌿 **Git Wizard** | Resolve your first merge conflict |
+| 🐣 **Hello Robot** | Κάνε ένα motor να κινηθεί για πρώτη φορά |
+| 🔥 **Magic Smoke Survivor** | Παραλίγο να σπάσεις κάτι, αλλά τελικά δεν το έσπασες |
+| 🐛 **Bug Hunter** | Βρες ένα bug που δεν είχε παρατηρήσει κανείς άλλος |
+| 🧙 **Debugger** | Διόρθωσε ένα πρόβλημα χωρίς παρέμβαση mentor |
+| 📖 **RTFM** | Λύσε ένα πρόβλημα διαβάζοντας όντως το documentation |
+| 🌿 **Git Wizard** | Λύσε το πρώτο σου merge conflict |
 | 💀 **Detached HEAD** | Discover Git's forbidden dimension |
 | 📐 **Engineer** | Measure before guessing |
-| 🤖 **Robot Whisperer** | Diagnose a hardware problem from the sound |
-| 🧠 **Wait... I Get It!** | Explain something you didn't understand last week |
+| 🤖 **Robot Whisperer** | Διάγνωσε hardware πρόβλημα μόνο από τον ήχο |
+| 🧠 **Wait... I Get It!** | Εξήγησε κάτι που δεν καταλάβαινες την προηγούμενη εβδομάδα |
 | 🔴 **WHY WOULD YOU DO THIS?** | Complete a Level 4 challenge |
 
-Achievements have absolutely no academic value.
-
-This makes them extremely important.
+Τα achievements δεν έχουν **καμία απολύτως ακαδημαϊκή αξία** και για αυτό είανι τα σημαντικότερα
 
 ---
 
 # 🤖 Hardware + Software
 
-One of the most important ideas in this repository:
+Μία από τις σημαντικότερες ιδέες αυτού του repository είναι ότι:
 
 ### Software does not exist in isolation.
 
-When we write:
+Όταν γράφουμε:
 
 ```java
 motor.setVelocity(1200);
 ```
 
-`1200` isn't just a number.
-
-It corresponds to something happening in the **physical world**.
-
+το `1200` αντιστοιχεί σε ένα πραγματικό μεγεθος που κάπως θα αντικατοπτριστεί στον πραγματικό κόσμο
 ```mermaid
 flowchart LR
     A[💻 Java Code] --> B[🧠 Control Logic]
@@ -767,7 +667,7 @@ flowchart LR
     G --> B
 ```
 
-We will constantly move between:
+Στα labs θα κινούμαστε συνεχώς ανάμεσα σε:
 
 ```text
 CODE
@@ -779,15 +679,15 @@ HARDWARE
 PHYSICS
 ```
 
-Understanding those connections is one of the main goals of the lab.
+Η κατανόηση αυτών των συνδέσεων είναι ένας από τους βασικούς στόχους του εργαστηρίου.
 
 ---
 
-# 🧪 Experiments > Guessing
+# Experiments > Guessing
 
-Suppose we don't know the best motor velocity.
+Ας υποθέσουμε ότι δεν γνωρίζουμε ποια είναι η καλύτερη ταχύτητα ενός motor.
 
-We could:
+Θα μπορούσαμε να κάνουμε:
 
 ```text
 guess → 1000
@@ -796,9 +696,9 @@ guess → 1500
 guess → 1700
 ```
 
-Or...
+Ή
 
-we could behave suspiciously like engineers:
+θα μπορούσαμε να συμπεριφερθούμε ύποπτα σαν engineers:
 
 | Test | Velocity | Time | Error |
 |---|---:|---:|---:|
@@ -807,25 +707,23 @@ we could behave suspiciously like engineers:
 | 3 | 1400 | ... | ... |
 | 4 | 1600 | ... | ... |
 
-Then analyze the result.
+και μετά να αναλύσουμε τα αποτελέσματα.
 
 ### Measure first. Decide second.
 
 ---
 
+# Things That Require a Mentor
 
+Ρωτήστε έναν mentor **πριν**:
 
-# 🚨 Things That Require a Mentor
-
-Ask before:
-
-- ⚠️ changing major electrical wiring
-- ⚠️ testing an unfamiliar high-speed mechanism
-- ⚠️ modifying safety-critical hardware
-- ⚠️ flashing/changing important device firmware
-- ⚠️ making structural robot changes
-- ⚠️ testing something that could damage hardware
-- ⚠️ doing anything that makes you think:
+- ⚠️ αλλάξετε σημαντικά την ηλεκτρική καλωδίωση
+- ⚠️ δοκιμάσετε έναν άγνωστο μηχανισμό υψηλής ταχύτητας
+- ⚠️ τροποποιήσετε safety-critical hardware
+- ⚠️ αλλάξετε/flashing σημαντικό device firmware
+- ⚠️ κάνετε δομικές αλλαγές στο robot
+- ⚠️ δοκιμάσετε κάτι που μπορεί να προκαλέσει ζημιά στο hardware
+- ⚠️ κάνετε οτιδήποτε σας κάνει να σκεφτείτε:
 
 > "This is probably fine."
 
@@ -840,27 +738,27 @@ Especially the last one.
 
 <br>
 
-We don't expect you to know robotics.
+Δεν περιμένουμε να γνωρίζετε ήδη robotics.
 
-We don't expect you to know every algorithm.
+Δεν περιμένουμε να γνωρίζετε κάθε algorithm.
 
-We don't expect you to immediately understand every piece of hardware.
+Δεν περιμένουμε να καταλαβαίνετε αμέσως κάθε κομμάτι του hardware.
 
-We **do** expect you to:
+**Περιμένουμε**, όμως, να:
 
-- be curious,
-- experiment,
-- ask questions,
-- help each other,
-- document what you learn,
-- think before randomly changing things,
-- and gradually become more independent.
+- είστε περίεργοι,
+- πειραματίζεστε,
+- κάνετε ερωτήσεις,
+- βοηθάτε ο ένας τον άλλον,
+- καταγράφετε όσα μαθαίνετε,
+- σκέφτεστε πριν αρχίσετε να αλλάζετε πράγματα στην τύχη,
+- και σταδιακά να γίνεστε περισσότερο ανεξάρτητοι.
 
-The goal is not:
+Ο στόχος **δεν είναι**:
 
 > **"The mentor knows how to fix the robot."**
 
-The goal is:
+Ο στόχος είναι:
 
 > **"The team knows how to figure out how to fix the robot."**
 
@@ -877,18 +775,18 @@ The goal is:
 
 Excellent.
 
-Start with the debugging protocol.
+Ξεκινήστε με το debugging protocol.
 
-Check:
+Ελέγξτε:
 
-1. Is the robot powered?
-2. Is the program actually running?
-3. Are the motors initialized correctly?
-4. Are you sending power/velocity?
-5. Does telemetry show what you expect?
-6. Is there a hardware problem?
+1. Είναι ενεργοποιημένο το robot;
+2. Εκτελείται όντως το πρόγραμμα;
+3. Έχουν γίνει σωστά initialize τα motors;
+4. Στέλνετε power/velocity στα motors;
+5. Δείχνει το telemetry αυτό που περιμένετε;
+6. Υπάρχει hardware πρόβλημα;
 
-Do **not** immediately rewrite the entire program.
+**Μην ξαναγράψετε αμέσως ολόκληρο το πρόγραμμα.**
 
 </details>
 
@@ -897,13 +795,13 @@ Do **not** immediately rewrite the entire program.
 
 <br>
 
-Yes, unless an exercise explicitly says otherwise.
+Ναι, εκτός αν μια άσκηση αναφέρει ρητά το αντίθετο.
 
-But you must understand what you submit.
+Πρέπει όμως να **καταλαβαίνετε αυτό που παραδίδετε**.
 
-AI can help you **learn** the solution.
+Το AI μπορεί να σας βοηθήσει να **μάθετε** τη λύση.
 
-AI should not replace the learning.
+Δεν πρέπει να αντικαταστήσει τη διαδικασία μάθησης.
 
 </details>
 
@@ -912,15 +810,15 @@ AI should not replace the learning.
 
 <br>
 
-Whenever you genuinely need help.
+Όποτε πραγματικά χρειάζεστε βοήθεια.
 
-You do **not** need to waste an hour being stuck just to prove that you tried.
+**Δεν χρειάζεται να μείνετε κολλημένοι για μία ώρα** απλώς και μόνο για να αποδείξετε ότι προσπαθήσατε.
 
-Try to identify:
+Προσπαθήστε πρώτα να προσδιορίσετε:
 
-- what you expected,
-- what happened,
-- what you've tested.
+- τι περιμένατε να συμβεί,
+- τι συνέβη,
+- τι έχετε ήδη ελέγξει.
 
 Then ask.
 
@@ -935,9 +833,9 @@ Probably not.
 
 Robots break.
 
-Tell a mentor.
+Ενημερώστε έναν mentor.
 
-Trying to hide a problem is much worse than causing one while genuinely experimenting.
+Το να προσπαθήσετε να κρύψετε ένα πρόβλημα είναι πολύ χειρότερο από το να προκαλέσετε ένα πρόβλημα κατά τη διάρκεια ενός πραγματικού πειράματος.
 
 </details>
 
@@ -952,9 +850,9 @@ You have unlocked:
 
 ### 💀 Git.
 
-Ask for help if you don't understand what Git is asking you to merge.
+Ζητήστε βοήθεια αν δεν καταλαβαίνετε τι ακριβώς σας ζητάει το Git να κάνετε merge.
 
-Do **not** randomly delete conflict markers and hope for the best.
+**Μην διαγράφετε τυχαία conflict markers ελπίζοντας ότι όλα θα πάνε καλά.**
 
 </details>
 
@@ -962,28 +860,28 @@ Do **not** randomly delete conflict markers and hope for the best.
 
 # 🎓 Academic & Team Integrity
 
-You are encouraged to:
+Σας ενθαρρύνουμε να:
 
-- ✅ discuss ideas
-- ✅ work together
-- ✅ read documentation
-- ✅ search for solutions
-- ✅ ask mentors
-- ✅ use AI responsibly
-- ✅ experiment
-- ✅ learn from existing code
+- ✅ συζητάτε ιδέες
+- ✅ συνεργάζεστε
+- ✅ διαβάζετε documentation
+- ✅ αναζητάτε λύσεις
+- ✅ ρωτάτε mentors
+- ✅ χρησιμοποιείτε υπεύθυνα AI
+- ✅ πειραματίζεστε
+- ✅ μαθαίνετε από υπάρχοντα code
 
-You should **not**:
+Δεν πρέπει να:
 
-- ❌ submit somebody else's work as your own
-- ❌ copy code you don't understand
-- ❌ hide where a solution came from
-- ❌ let one teammate do all the work
-- ❌ manipulate results to make an experiment "work"
+- ❌ παραδίδετε τη δουλειά κάποιου άλλου ως δική σας
+- ❌ αντιγράφετε code που δεν καταλαβαίνετε
+- ❌ αποκρύπτετε από πού προήλθε μια λύση
+- ❌ αφήνετε έναν teammate να κάνει όλη τη δουλειά
+- ❌ αλλοιώνετε αποτελέσματα για να φαίνεται ότι ένα πείραμα "δούλεψε"
 
-The important question is:
+Η σημαντική ερώτηση είναι:
 
- **"Do you understand the engineering behind what you submitted?"**
+# **"Do you understand the engineering behind what you submitted?"**
 
 ---
 
@@ -991,17 +889,17 @@ The important question is:
 
 Robotics is supposed to be **fun**.
 
-You are allowed to experiment.
+Μπορείτε να πειραματίζεστε.
 
-You are allowed to make mistakes.
+Μπορείτε να κάνετε λάθη.
 
-You are allowed to ask "stupid" questions.
+Μπορείτε να κάνετε "χαζές" ερωτήσεις.
 
-You are allowed to propose weird ideas.
+Μπορείτε να προτείνετε περίεργες ιδέες.
 
-You are allowed to build something that fails spectacularly.
+Μπορείτε να κατασκευάσετε κάτι που θα αποτύχει θεαματικά.
 
-You are even allowed to write code that makes the robot:
+Μπορείτε ακόμη και να γράψετε κώδικα που κάνει το robot:
 
 ```text
                     🤖
@@ -1013,7 +911,7 @@ You are even allowed to write code that makes the robot:
                     why
 ```
 
-Just make sure we eventually understand:
+Απλώς φροντίστε στο τέλος να καταλάβουμε:
 
 # WHY.
 
@@ -1038,8 +936,11 @@ Just make sure we eventually understand:
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=700&lines=BUILD+%E2%86%92+BREAK+%E2%86%92+DEBUG+%E2%86%92+LEARN+%E2%86%92+REPEAT;Welcome+to+EduRobotics+%E2%80%93+UoC;FTC+Engineering+Lab+%F0%9F%A4%96" />
 
 </div>
+
 **EduRobotics – University of Crete**
 
 *FIRST Tech Challenge Educational Repository*
 
 </div>
+````
+
