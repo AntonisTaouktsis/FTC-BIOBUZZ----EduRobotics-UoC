@@ -981,13 +981,9 @@ You should **not**:
 - ❌ let one teammate do all the work
 - ❌ manipulate results to make an experiment "work"
 
-The important question isn't:
-
-> **"Did you personally type every character?"**
-
 The important question is:
 
-> **"Do you understand the engineering behind what you submitted?"**
+ **"Do you understand the engineering behind what you submitted?"**
 
 ---
 
