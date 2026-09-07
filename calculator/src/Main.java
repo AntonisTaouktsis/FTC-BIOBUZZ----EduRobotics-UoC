@@ -9,7 +9,7 @@ class Calculator{
     public static double add(double a, double b){
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα sum.
         // Σε αυτήν, βάλτε το άθροισμα του a και του b
-
+        
 
         return sum;
     }
@@ -17,7 +17,7 @@ class Calculator{
     public static double sub(double a, double b){
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα sum.
         // Σε αυτήν, βάλτε το αποτέλεσμα της αφαίρεσης του a και του b
-
+        
 
         return sum;
     }
@@ -26,7 +26,7 @@ class Calculator{
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα product
         // Σε αυτήν, βάλτε το αποτέλεσμα της αφαίρεσης του a και του b
 
-
+        
 
         return product;
     }
@@ -37,12 +37,76 @@ class Calculator{
         // ΠΡΟΣOXH στο ποια διαιρεση γίνεται και ποια όχι. Να θυμάστε ότι πάντα
         // πρέπει να έχει μία τιμή το quo. Για αυτόν τον λόγο το αρχικοποιούμε με ERROR.
         // Αν η διαίρεση δεν γίνεται (αρα αν ο παρονομαστής ισούται με το 0), η τιμή του quo
-        // δεν θα αλλάξει και θα είναι ERROR
-        double quo = ERROR;  //Διατηρήστε αυτήν την τιμή μόνο ΚΑΙ ΜΟΝΟ αν η διαίρεση δεν γίνεται
-        //ΓΡΑΨΤΕ ΕΔΩ
+        // δεν θα αλλάξει και θα είναι 0
 
+        double quo = ERROR;  //Διατηρήστε αυτήν την τιμή μόνο ΚΑΙ ΜΟΝΟ αν η διαίρεση δεν γίνεται
+        
         return quo;
     }
+
+
+    // ============================================================
+    //                         CHALLENGE 1
+    // ============================================================
+
+    public static double powerTo(double a, double b){
+
+        // Υπολογίστε τον αριθμό a υψωμένο στη δύναμη b.
+        //
+        // ΠΡΟΣΟΧΗ: Για αυτό το challenge θεωρούμε ότι το b
+        // μπορεί να είναι μόνο 0, 1, 2 ή 3.
+        //
+        // Παραδείγματα:
+        //
+        // powerTo(5, 0) -> 1
+        // powerTo(5, 1) -> 5
+        // powerTo(5, 2) -> 25
+        // powerTo(5, 3) -> 125
+        //
+        // Χρησιμοποιήστε ΜΟΝΟ if και πράξεις.
+        //
+        // Αν το b δεν είναι 0, 1, 2 ή 3 επιστρέψτε ERROR.
+
+        double result = ERROR;
+
+
+
+        return result;
+    }
+
+
+
+    // ============================================================
+    //                         CHALLENGE 2
+    // ============================================================
+
+    public static boolean safeMotor(double a, double b){
+
+        // Τα a και b είναι οι ισχείς δύο κινητήρων.
+        //
+        // Ένας κινητήρας μπορεί να πάρει τιμές ΜΟΝΟ
+        // από -1 μέχρι 1.
+        //
+        // Ελέγξτε ΚΑΙ το a ΚΑΙ το b.
+        //
+        // Η συνάρτηση πρέπει να επιστρέφει true
+        // μόνο όταν ΚΑΙ ΟΙ ΔΥΟ τιμές είναι ασφαλείς, αλλιώς
+        // επιστρέφει false
+        //
+        // Παραδείγματα:
+        //
+        // safeMotor(0.5, 0.8)  -> true
+        // safeMotor(-1, 1)     -> true
+        // safeMotor(1.5, 0.5)  -> false
+        // safeMotor(0.5, -2)   -> false
+        //
+        // Χρησιμοποιήστε if.
+
+
+
+    }
+
+
 
     public static void main(String[] args){
         // Εδώ είναι η κύρια συνάρτηση από το κομπιουτεράκι
@@ -56,7 +120,7 @@ class Calculator{
         // Mode.ADD, Mode.SUB, Mode.DIV, Mode.MUL (πρόσθεση, αφαίρεση, διαίρεση και πολλαπλασιασμό αντίστοιχα)
 
         // ΑΓΝΟΕΙΣΤΕ ΑΥΤΟ ΤΟ ΚΟΜΜΑΤΙ---------------------
-        while(true){                                    // |
+        while(true){
             Calculator calculator = new Calculator();   // |
                                                         // |
             CalculatorGUI gui = new CalculatorGUI();    // |
@@ -66,12 +130,13 @@ class Calculator{
             Mode mode = gui.getMode();                  // |
                                                         // |
             double result = 0;                          // |
+            boolean safe = false;                       // |
 //-------------------------------------------------------
 
-            //ΓΡΑΨΤΕ ΕΔΩ. Οι μεταβλητές σας λέγονται a και b.
-            // Ακόμα, η πράξη την οποία πρέπει να κάνετε λέγεται mode και παίρνει τις τιμές
-            // Mode.ADD, Mode.SUB, Mode.MUL, Mode.DIV
-            // Για ευκολία δίνουομε την πρώτη συνθήκη
+        //ΓΡΑΨΤΕ ΕΔΩ. Οι μεταβλητές σας λέγονται a και b.
+        // Ακόμα, η πράξη την οποία πρέπει να κάνετε λέγεται mode και παίρνει τις τιμές
+        // Mode.ADD, Mode.SUB, Mode.MUL, Mode.DIV
+        // Για ευκολία δίνουομε την πρώτη συνθήκη
 
             if(mode == Mode.ADD){
                 result = // Συμπληρώστε εδώ add(a,b);
@@ -83,11 +148,38 @@ class Calculator{
 
             /**Συμληρώστε τις υπόλοιπες συνθήκες*/
 
+
+        // ============================================================
+        //                         CHALLENGES
+        // ============================================================
+        //
+        // Υπάρχουν ακόμα δύο πιθανές τιμές του mode:
+        //
+        // Mode.POWER_TO
+        // Mode.SAFE_MOTOR
+        //
+        // Στο POWER_TO πρέπει να χρησιμοποιήσετε τη συνάρτηση powerTo(a,b).
+        //
+        // Στο SAFE_MOTOR πρέπει να χρησιμοποιήσετε τη συνάρτηση safeMotor(a,b)
+        // και να αποθηκεύσετε το αποτέλεσμα στη μεταβλητή safe.
+
+
+
+
+
             // ΑΓΝΟΗΣΤΕ ΟΤΙΔΗΠΟΤΕ ΒΡΙΣΚΕΤΑΙ ΠΑΡΑ ΚΑΤΩ
-            gui.showResult(result);
+
+                if(mode == Mode.SAFE_MOTOR){
+                    gui.showMotorResult(safe);
+                }
+                else{
+                    gui.showResult(result);
+            }    
         }
     }
 }
+
+
 
 
 // ============================================================================
@@ -101,7 +193,9 @@ enum Mode{
     ADD,
     SUB,
     DIV,
-    MUL
+    MUL,
+    POWER_TO,
+    SAFE_MOTOR
 }
 
 
@@ -145,7 +239,7 @@ class CalculatorGUI{
 
         window.setSize(
                 450,
-                350
+                390
         );
 
         window.setLocationRelativeTo(null);
@@ -247,7 +341,7 @@ class CalculatorGUI{
 
         inputPanel.add(
                 new JLabel(
-                        "Πρώτος αριθμός:"
+                        "Πρώτος αριθμός (a):"
                 )
         );
 
@@ -258,7 +352,7 @@ class CalculatorGUI{
 
         inputPanel.add(
                 new JLabel(
-                        "Δεύτερος αριθμός:"
+                        "Δεύτερος αριθμός (b):"
                 )
         );
 
@@ -421,19 +515,50 @@ class CalculatorGUI{
 
 
     public void showResult(double result){
-        if(result != Integer.MIN_VALUE)
-        JOptionPane.showMessageDialog(
-                null,
-                "Αποτέλεσμα: " + result,
-                "Calculator",
-                JOptionPane.INFORMATION_MESSAGE
-        );
-        else
+
+        if(result != Calculator.ERROR){
+
             JOptionPane.showMessageDialog(
                     null,
-                    "Άπειρο. Δεν γίνεται διαίρεση με το 0",
+                    "Αποτέλεσμα: " + result,
                     "Calculator",
                     JOptionPane.INFORMATION_MESSAGE
             );
+
+        }
+        else{
+
+            JOptionPane.showMessageDialog(
+                    null,
+                    "ERROR",
+                    "Calculator",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
+    }
+
+
+
+    public void showMotorResult(boolean safe){
+
+        if(safe){
+
+            JOptionPane.showMessageDialog(
+                    null,
+                    "SAFE: Και οι δύο τιμές μπορούν να δοθούν στους κινητήρες.",
+                    "Motor Safety Check",
+                    JOptionPane.INFORMATION_MESSAGE
+            );
+
+        }
+        else{
+
+            JOptionPane.showMessageDialog(
+                    null,
+                    "ERROR: Τουλάχιστον μία τιμή δεν είναι μεταξύ -1 και 1.",
+                    "Motor Safety Check",
+                    JOptionPane.ERROR_MESSAGE
+            );
+        }
     }
 }
