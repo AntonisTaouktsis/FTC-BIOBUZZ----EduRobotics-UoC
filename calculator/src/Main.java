@@ -9,7 +9,7 @@ class Calculator{
     public static double add(double a, double b){
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα sum.
         // Σε αυτήν, βάλτε το άθροισμα του a και του b
-        
+
 
         return sum;
     }
@@ -17,7 +17,7 @@ class Calculator{
     public static double sub(double a, double b){
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα sum.
         // Σε αυτήν, βάλτε το αποτέλεσμα της αφαίρεσης του a και του b
-        
+
 
         return sum;
     }
@@ -25,8 +25,6 @@ class Calculator{
     public static double mul(double a, double b){
         // Δημιουργήστε μία μεταβλητή (τύπου double) με όνομα product
         // Σε αυτήν, βάλτε το αποτέλεσμα της αφαίρεσης του a και του b
-
-        
 
         return product;
     }
@@ -40,9 +38,10 @@ class Calculator{
         // δεν θα αλλάξει και θα είναι 0
 
         double quo = ERROR;  //Διατηρήστε αυτήν την τιμή μόνο ΚΑΙ ΜΟΝΟ αν η διαίρεση δεν γίνεται
-        
+
         return quo;
     }
+
 
 
     // ============================================================
@@ -68,8 +67,6 @@ class Calculator{
         // Αν το b δεν είναι 0, 1, 2 ή 3 επιστρέψτε ERROR.
 
         double result = ERROR;
-
-
 
         return result;
     }
@@ -102,8 +99,6 @@ class Calculator{
         //
         // Χρησιμοποιήστε if.
 
-
-
     }
 
 
@@ -119,62 +114,75 @@ class Calculator{
         // Για να ξέρετε ποια πράξη να κάνετε χρησιμοποιείστε τη μεταβλή mode. Αυτό παίρνει τις τιμές
         // Mode.ADD, Mode.SUB, Mode.DIV, Mode.MUL (πρόσθεση, αφαίρεση, διαίρεση και πολλαπλασιασμό αντίστοιχα)
 
+
         // ΑΓΝΟΕΙΣΤΕ ΑΥΤΟ ΤΟ ΚΟΜΜΑΤΙ---------------------
-        while(true){
-            Calculator calculator = new Calculator();   // |
-                                                        // |
-            CalculatorGUI gui = new CalculatorGUI();    // |
-                                                        // |
-            double a = gui.getA();                      // |
-            double b = gui.getB();                      // |
-            Mode mode = gui.getMode();                  // |
-                                                        // |
-            double result = 0;                          // |
-            boolean safe = false;                       // |
+        CalculatorGUI gui = new CalculatorGUI();    // |
+        // |
+        while(true){                                // |
+            // |
+            gui.waitForInput();                     // |
+            // |
+            double a = gui.getA();                  // |
+            double b = gui.getB();                  // |
+            Mode mode = gui.getMode();              // |
+            // |
+            double result = 0;                      // |
+            boolean safe = false;                   // |
 //-------------------------------------------------------
 
-        //ΓΡΑΨΤΕ ΕΔΩ. Οι μεταβλητές σας λέγονται a και b.
-        // Ακόμα, η πράξη την οποία πρέπει να κάνετε λέγεται mode και παίρνει τις τιμές
-        // Mode.ADD, Mode.SUB, Mode.MUL, Mode.DIV
-        // Για ευκολία δίνουομε την πρώτη συνθήκη
+
+            //ΓΡΑΨΤΕ ΕΔΩ. Οι μεταβλητές σας λέγονται a και b.
+            // Ακόμα, η πράξη την οποία πρέπει να κάνετε λέγεται mode και παίρνει τις τιμές
+            // Mode.ADD, Mode.SUB, Mode.MUL, Mode.DIV
+            // Για ευκολία δίνουομε την πρώτη συνθήκη
 
             if(mode == Mode.ADD){
-                result = // Συμπληρώστε εδώ add(a,b);
+                result = /*συμπληρώστε εδώ add(a, b); */ ;
             }
 
-            else if(/**Συμπληρώστε τη συνθήκη **/){
-                /** Τι τιμή πρέπει να έχει το result?*/
+            else if(/*συμπληρώστε τη συνθήκη για την αφαίρεση*/){
+                /* Αναθέστε τη κατάλληλη τιμή στο result*/
+            }
+            /*Ομοίως, συμπληρώστε τις υπόλοιπες συνθήκες
+             *      για τις τιμές  Mode.MUL kai Mode.DIV
+             *      Αναθέστε κατάλληλα την τιμή του result
+             *                                              */
+
+
+
+            // ============================================================
+            //                         CHALLENGES
+            // ============================================================
+            //
+            // Υπάρχουν ακόμα δύο πιθανές τιμές του mode:
+            //
+            // Mode.POWER_TO
+            // Mode.SAFE_MOTOR
+            //
+            // Στο POWER_TO πρέπει να χρησιμοποιήσετε τη συνάρτηση powerTo(a,b).
+            //
+            // Στο SAFE_MOTOR πρέπει να χρησιμοποιήσετε τη συνάρτηση safeMotor(a,b)
+            // και να αποθηκεύσετε το αποτέλεσμα στη μεταβλητή safe.
+
+
+            else if(mode == Mode.POWER_TO){
+                result = powerTo(a,b);
             }
 
-            /**Συμληρώστε τις υπόλοιπες συνθήκες*/
-
-
-        // ============================================================
-        //                         CHALLENGES
-        // ============================================================
-        //
-        // Υπάρχουν ακόμα δύο πιθανές τιμές του mode:
-        //
-        // Mode.POWER_TO
-        // Mode.SAFE_MOTOR
-        //
-        // Στο POWER_TO πρέπει να χρησιμοποιήσετε τη συνάρτηση powerTo(a,b).
-        //
-        // Στο SAFE_MOTOR πρέπει να χρησιμοποιήσετε τη συνάρτηση safeMotor(a,b)
-        // και να αποθηκεύσετε το αποτέλεσμα στη μεταβλητή safe.
-
-
+            else if(mode == Mode.SAFE_MOTOR){
+                safe = safeMotor(a,b);
+            }
 
 
 
             // ΑΓΝΟΗΣΤΕ ΟΤΙΔΗΠΟΤΕ ΒΡΙΣΚΕΤΑΙ ΠΑΡΑ ΚΑΤΩ
 
-                if(mode == Mode.SAFE_MOTOR){
-                    gui.showMotorResult(safe);
-                }
-                else{
-                    gui.showResult(result);
-            }    
+            if(mode == Mode.SAFE_MOTOR){
+                gui.showMotorResult(safe);
+            }
+            else{
+                gui.showResult(result);
+            }
         }
     }
 }
@@ -185,6 +193,7 @@ class Calculator{
 // ============================================================================
 //
 //                  ΑΓΝΟΗΣΤΕ ΤΟΝ ΚΩΔΙΚΑ ΑΠΟ ΕΔΩ ΚΑΙ ΚΑΤΩ
+//
 //
 // ============================================================================
 
@@ -214,13 +223,12 @@ class CalculatorGUI{
     private JComboBox<Mode> operationBox;
 
     private JLabel errorLabel;
+    private JLabel resultLabel;
 
 
     public CalculatorGUI(){
 
         createWindow();
-
-        window.setVisible(true);
     }
 
 
@@ -238,8 +246,8 @@ class CalculatorGUI{
         );
 
         window.setSize(
-                450,
-                390
+                500,
+                420
         );
 
         window.setLocationRelativeTo(null);
@@ -328,6 +336,21 @@ class CalculatorGUI{
 
 
 
+        resultLabel = new JLabel(
+                " ",
+                SwingConstants.CENTER
+        );
+
+        resultLabel.setFont(
+                new Font(
+                        "Arial",
+                        Font.BOLD,
+                        18
+                )
+        );
+
+
+
         JPanel inputPanel =
                 new JPanel(
                         new GridLayout(
@@ -411,6 +434,11 @@ class CalculatorGUI{
         );
 
 
+        resultLabel.setAlignmentX(
+                Component.CENTER_ALIGNMENT
+        );
+
+
 
         mainPanel.add(
                 title
@@ -447,6 +475,16 @@ class CalculatorGUI{
         );
 
 
+        mainPanel.add(
+                Box.createVerticalStrut(10)
+        );
+
+
+        mainPanel.add(
+                resultLabel
+        );
+
+
 
         calculateButton.addActionListener(
                 e -> readInput()
@@ -456,6 +494,15 @@ class CalculatorGUI{
         window.add(
                 mainPanel
         );
+    }
+
+
+
+    public void waitForInput(){
+
+        errorLabel.setText(" ");
+
+        window.setVisible(true);
     }
 
 
@@ -479,7 +526,9 @@ class CalculatorGUI{
                             operationBox.getSelectedItem();
 
 
-            window.dispose();
+            errorLabel.setText(" ");
+
+            window.setVisible(false);
 
         }
 
@@ -518,21 +567,16 @@ class CalculatorGUI{
 
         if(result != Calculator.ERROR){
 
-            JOptionPane.showMessageDialog(
-                    null,
-                    "Αποτέλεσμα: " + result,
-                    "Calculator",
-                    JOptionPane.INFORMATION_MESSAGE
+            resultLabel.setText(
+                    "Αποτέλεσμα: " + result
             );
 
         }
+
         else{
 
-            JOptionPane.showMessageDialog(
-                    null,
-                    "ERROR",
-                    "Calculator",
-                    JOptionPane.ERROR_MESSAGE
+            resultLabel.setText(
+                    "Δεν γίνεται διαίρεση με το 0 ή διατηρήστε τη τιμή του εκθέτη από 0 μέχρι και 3"
             );
         }
     }
@@ -543,21 +587,16 @@ class CalculatorGUI{
 
         if(safe){
 
-            JOptionPane.showMessageDialog(
-                    null,
-                    "SAFE: Και οι δύο τιμές μπορούν να δοθούν στους κινητήρες.",
-                    "Motor Safety Check",
-                    JOptionPane.INFORMATION_MESSAGE
+            resultLabel.setText(
+                    "SAFE: Και οι δύο τιμές μπορούν να δοθούν στους κινητήρες."
             );
 
         }
+
         else{
 
-            JOptionPane.showMessageDialog(
-                    null,
-                    "ERROR: Τουλάχιστον μία τιμή δεν είναι μεταξύ -1 και 1.",
-                    "Motor Safety Check",
-                    JOptionPane.ERROR_MESSAGE
+            resultLabel.setText(
+                    "ERROR: Τουλάχιστον μία τιμή δεν είναι μεταξύ -1 και 1."
             );
         }
     }
